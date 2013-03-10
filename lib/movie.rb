@@ -1,4 +1,11 @@
 class Movie
+  attr_reader :id, :title, :year, :score
+  def initialize(hash={})
+    @id = hash.fetch(:id)
+    @title = hash.fetch(:title)
+    @year = hash.fetch(:year)
+    @score = hash.fetch(:score)
+  end
   # def self.search(title)
   #   Api.search_by_title(title)
   # end

@@ -1,1 +1,2 @@
-APIKEY = "cdz6mev7zywr529nreq98fhm"
+require_relative "lib/movie"
+require_relative "lib/api"
