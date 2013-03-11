@@ -25,3 +25,11 @@ describe Api do
     movie.year.should eq(1994)
   end
 end
+
+describe "unknown movie" do
+
+  it "should return NOT_FOUND for title if movie not found" do
+    movie = Api.search_by_title("NOTHINGFOUND")
+    movie.title.should be_nil
+  end
+end
